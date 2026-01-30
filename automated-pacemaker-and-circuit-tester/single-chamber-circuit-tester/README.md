@@ -79,5 +79,5 @@ This behavior is automatically enabled based on circuit model identification.
 ---
 
 ## Status
-- Single-channel circuit validation: **Implemented and in actively used in Production QC**
+- Single-chamber circuit validation: **Implemented and is actively used in Production QC**
 - Dual-channel circuit tester: **Under development**
