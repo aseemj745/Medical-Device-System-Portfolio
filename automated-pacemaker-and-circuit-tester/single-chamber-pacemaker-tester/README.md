@@ -26,3 +26,6 @@ This flow validates final single-chamber pacemakers in a fully automated manner.
 - If any test fails, the specific test can be re-executed once
 - If the re-test passes, the result is updated and the device can PASS
 - If the re-test fails, the device is routed to manual testing
+
+##Status
+Single-chamber pacemaker validation: Implemented and is actively used in Production QC
