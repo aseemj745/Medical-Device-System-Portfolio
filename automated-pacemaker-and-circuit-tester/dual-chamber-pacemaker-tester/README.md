@@ -25,3 +25,6 @@ The dual-chamber test flow extends the single-chamber logic by validating both a
 - All tests complete before evaluation
 - Failed tests can be re-executed once
 - Persistent failures are routed to manual testing
+
+## Status
+- Dual-chamber pacemaker validation: Implemented and is actively used in Production QC
