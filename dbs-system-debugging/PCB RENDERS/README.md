@@ -1,30 +1,28 @@
-## PCB Design Iterations – DBS IPG (Representative)
+## DBS IPG – PCB Layout Renders
 
-This folder contains representative PCB layout renders developed during
-system debugging, validation, and iteration of the DBS Implantable Pulse
-Generator (IPG).
+This folder contains PCB layout renders created during debugging and
+validation of the DBS Implantable Pulse Generator (IPG).
 
-### Design Iterations & Rationale
+### What is shown here
+- IPG Rev 1.0 – 4 Layer PCB
+- IPG Rev 2.1 – 2 Layer PCB
 
-- **IPG Rev 1.0 – 4 Layer**
-  - Initial layout used for system bring-up and early validation
-  - Helped identify layout-level and schematic import issues during bench testing
+These boards were used for R&D debugging, validation, and system bring-up.
 
-- **IPG Rev 2.1 – 2 Layer**
-  - Iterative revision incorporating corrections from Rev 1.0 learnings
-  - Updated component selection and footprints to improve manufacturability
-    and debuggability
-  - Replaced BGA packages with QFN, TSSOP, and VQFN components to enable
-    easier soldering, probing, and rework during R&D validation
-  - Improved schematic-to-layout consistency during OrCAD → Altium migration
+### Design Iterations
+- The first revision was used for initial bring-up and testing
+- Issues observed during debugging were corrected in the second revision
+- Schematic import from OrCAD to Altium was reviewed and cleaned up
+- Component packages were updated to improve soldering and rework
+  (BGA parts replaced with QFN / TSSOP / VQFN where possible)
 
-### Engineering Focus
-- Design iteration driven by hands-on debugging and validation feedback
-- Emphasis on manufacturability, solderability, and bench-level accessibility
-- Support for efficient system bring-up and hardware–firmware integration
+### Engineering Work Done
+- OrCAD to Altium PCB migration
+- Layout modification based on bench-level debugging feedback
+- Component footprint updates for easier assembly and probing
+- Support for firmware flashing and electrical validation
 
 ### Notes
-- Images are PCB layout renders only (top and bottom views)
-- Schematics, BOM, and firmware are intentionally excluded
-- Designs shown are representative of engineering work and iteration process
-
+- Only PCB layout renders are shared
+- Schematics, BOM, and firmware are not included
+- Designs are representative of R&D and debugging work
