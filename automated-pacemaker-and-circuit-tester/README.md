@@ -19,3 +19,11 @@ The focus of this project is:
 - Automated Logging of Test Results in Excel sheet and automatically column increment for next pacemaker testing
 
 
+## This repository documents system-level test infrastructure developed for implantable cardiac devices and pacing circuits.
+
+Due to confidentiality constraints, source code is not included.
+The repository focuses on:
+- Test architecture and sequencing
+- Hardware design and validation
+- Automated logging and pass/fail logic
+- Production and R&D test workflows
