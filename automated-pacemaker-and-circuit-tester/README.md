@@ -16,12 +16,6 @@ The focus of this project is:
 - Automated signal acquisition and tolerance checking
 - Battery and reliability testing
 - Regression testing with re-test handling
-
-## Repository Structure
-- **Pacemaker Testing** – Functional validation of final pacemakers  
-- **Circuit Testing** – Rigorous electrical validation of pacing circuits  
-- **Hardware** – Test fixtures, PCB designs, and bench setup  
-
-Each section contains its own README explaining test logic, flow, and hardware context.
+- Automated Logging of Test Results in Excel sheet and automatically column increment for next pacemaker testing
 
 
