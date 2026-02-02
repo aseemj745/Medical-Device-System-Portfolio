@@ -45,6 +45,7 @@ All data is intended **only to demonstrate system behavior**, not device perform
 - Data is written to structured Excel templates
 - Failed parameters are highlighted automatically
 - Final PASS/FAIL status is generated per unit
+- Over 500+ circuits and 1500+ pacemaker were tested in regression before using it for Final Production QC
 
 ---
 
