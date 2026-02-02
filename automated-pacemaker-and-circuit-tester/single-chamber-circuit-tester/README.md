@@ -37,7 +37,7 @@ The following tests are executed first and act as mandatory qualification checks
 ### Stage 2 – Electrical Characterization & Functional Tests
 If all gate tests pass, the system executes a complete electrical validation sequence:
 
-- Impedance testing across all supported loads (350 Ω, 500 Ω, 1000 Ω, open, short)
+- Impedance testing under all defined load scenarios
 - Sensitivity verification
 - Urgent mode validation
 - Rate verification
