@@ -28,7 +28,7 @@ This flow validates final single-chamber pacemakers in a fully automated manner.
 - If the re-test fails, the device is routed to manual testing
 
 ## Regression Testing 
-- Over 1500+ Single Chamber Pacemaker were tested before finally placing it on production testing floor
+- Successfully tested 2000+ single chamber pacemakers before deployment to the production testing floor.
 
 ## Status
 - Single-chamber pacemaker validation: Implemented and is actively used in Production QC
