@@ -15,7 +15,7 @@ This flow validates final single-chamber pacemakers in a fully automated manner.
 4. Sensitivity test using CENELEC signal
 5. Rate verification
 6. Pulse-width verification
-7. Impedance measurement (500 Ω load)
+7. Impedance measurement using a predefined reference load
 8. Noise test
 9. Magnet response test
 10. High-amplitude stress test
