@@ -14,7 +14,7 @@ The dual-chamber test flow extends the single-chamber logic by validating both a
 4. Sensitivity tests (A & V channels)
 5. Rate and timing verification
 6. Pulse-width verification
-7. Impedance measurement
+7. Impedance measurement using a predefined reference load
 8. Noise test
 9. Magnet response test
 10. High-amplitude stress test
