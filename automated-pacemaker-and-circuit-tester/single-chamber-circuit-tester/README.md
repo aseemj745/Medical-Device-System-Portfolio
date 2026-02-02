@@ -79,7 +79,7 @@ This behavior is automatically enabled based on circuit model identification.
 ---
 
 ## Regression Testing 
-- Over 500+ circuits were tested before finally placing it on production testing floor
+- Successfully tested 500+ single chamber pacemaker circuit before deployment to the production testing floor.
 
 ---
 
