@@ -8,8 +8,7 @@ The DBS system comprises an implantable stimulation device (IPG) and an external
 
 ## My Role & Contributions
 - Migrated multi-layer DBS IPG and EIU PCB designs from OrCAD to Altium Designer
-- Designed custom debug and test boards to enable probing, signal access, and controlled system bring-up
-- Performed hands-on hardware debugging including soldering, rework, probing, and electrical verification
+- Performed hands-on hardware debugging, probing, and electrical verification
 - Supported firmware flashing and system initialization during bench testing
 - Acquired and analyzed on-board electrical signals using laboratory instruments to validate expected behavior
 
