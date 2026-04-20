@@ -85,4 +85,3 @@ This behavior is automatically enabled based on circuit model identification.
 
 ## Status
 - Single-chamber circuit validation: **Implemented and is actively used in Production QC**
-- Dual-chamber circuit tester: **Under development**
