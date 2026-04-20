@@ -68,7 +68,6 @@ This behavior is automatically enabled based on circuit model identification.
 - Individual failed tests can be re-executed once to rule out transient effects
 - **Failures caused by current violations or gate test failures are not eligible for re-test and are directly routed to manual inspection**
 - Persistent failures are routed to manual inspection
-- Final device status is reported as PASS or FAIL
 
 ---
 
