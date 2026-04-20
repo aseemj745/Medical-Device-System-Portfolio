@@ -19,7 +19,7 @@ It supports:
 
 ## Hardware Setup (Actual Implementation)
 
-![Full Test Setup](./assets/full_setup.png)
+![Full Test Setup](./assets/CIRCUIT TESTER FULL SETUP.jpeg)
 
 The above image shows the complete testbench setup, including:
 
@@ -101,7 +101,7 @@ Controlled and synchronized through the Test Control PCB.
 
 ## Software Interface & Execution
 
-![Console Interface](./assets/console_output.png)
+![Console Interface](./assets/CONSOLE OUTPUT FOR CIRCUIT TESTER COMBINED.png)
 
 The test system is operated through a Python-based CLI interface.
 
