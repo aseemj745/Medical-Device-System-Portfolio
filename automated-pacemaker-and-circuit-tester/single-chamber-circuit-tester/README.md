@@ -10,9 +10,10 @@ Circuit testing focuses on verifying electrical correctness, isolation, current 
 ## Test Philosophy
 - Circuit validation follows the same automation framework as pacemaker testing
 - Critical electrical tests act as gatekeepers for further testing
-- Continuous current monitoring is enforced across all test stages
-- Both bipolar and unipolar configurations are validated
-- Results are logged automatically with clear PASS / FAIL classification
+- **Continuous current monitoring is enforced across all test stages**
+- **Any abnormal current condition results in immediate termination and routing to manual inspection**
+- Both **bipolar and unipolar configurations are validated**
+- Results are fully automated with no manual intervention in measurement, evaluation, or logging
 
 ---
 
@@ -21,34 +22,34 @@ Circuit testing focuses on verifying electrical correctness, isolation, current 
 ### Stage 1 – Critical Gate Tests
 The following tests are executed first and act as mandatory qualification checks:
 
-1. **Amplitude & Leakage Test**
+1. **Amplitude & Leakage Test (Bipolar + Unipolar)**
    - Verifies output amplitude accuracy
    - Detects unintended leakage between bipolar and unipolar configurations
    - Validates current consumption during output delivery  
-   **Failure at this stage results in immediate termination and manual inspection**
+   **Failure (functional or current) results in immediate termination and manual inspection**
 
-2. **Pulse Width Test**
+2. **Pulse Width Test (Bipolar + Unipolar)**
    - Verifies pulse width accuracy
    - Monitors current consumption during pulse delivery  
-   **Failure at this stage results in immediate termination**
+   **Failure (functional or current) results in immediate termination and manual inspection**
 
 ---
 
 ### Stage 2 – Electrical Characterization & Functional Tests
 If all gate tests pass, the system executes a complete electrical validation sequence:
 
-- Impedance testing under all defined load scenarios
-- Sensitivity verification
+- **Impedance testing (Bipolar + Unipolar)**
+- **Sensitivity verification (Bipolar + Unipolar)**
 - Urgent mode validation
-- Rate verification
+- **Rate verification (Bipolar + Unipolar)**
 - Battery behavior monitoring
-- Noise immunity testing
+- **Noise immunity testing (Bipolar + Unipolar)**
 - High-energy stress testing at maximum parameters
-- Trailing edge and slew rate verification
+- **Trailing edge and slew rate verification (Bipolar + Unipolar)**
 - Magnet response verification
 
-Current consumption is continuously monitored during every test.  
-Any out-of-tolerance current condition results in immediate termination.
+**Current consumption is continuously monitored during every test stage.**  
+Any out-of-tolerance current condition results in immediate termination and routing to manual inspection.
 
 ---
 
@@ -62,26 +63,27 @@ This behavior is automatically enabled based on circuit model identification.
 ---
 
 ## Failure Handling & Re-Test Logic
-- All non-critical test failures are logged and highlighted in the test report
+- All **non-critical functional failures** are logged and highlighted in the test report
 - After full test execution, the system evaluates overall results
 - Individual failed tests can be re-executed once to rule out transient effects
+- **Failures caused by current violations or gate test failures are not eligible for re-test and are directly routed to manual inspection**
 - Persistent failures are routed to manual inspection
 - Final device status is reported as PASS or FAIL
 
 ---
 
 ## Test Coverage
-- Bipolar and unipolar output validation
-- Full load simulation across all supported impedances
-- Electrical stress testing under worst-case conditions
-- Current integrity verification using external measurement instrumentation
+- Bipolar and unipolar output validation across critical electrical parameters
+- Full load simulation across all supported impedance conditions
+- Electrical stress testing under worst-case scenarios
+- Continuous current integrity verification using external measurement instrumentation
 
 ---
 
 ## Regression Testing 
-- Successfully tested 500+ single chamber pacemaker circuit before deployment to the production testing floor.
+- Successfully validated **500+ single chamber pacing circuits** prior to deployment on the production testing floor
 
 ---
 
 ## Status
-- Single-chamber circuit validation: **Implemented and is actively used in Production QC**
+- Single-chamber circuit validation: **Implemented and actively used in Production QC**
