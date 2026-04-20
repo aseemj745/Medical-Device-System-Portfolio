@@ -38,14 +38,14 @@ The following tests are executed first and act as mandatory qualification checks
 ### Stage 2 – Electrical Characterization & Functional Tests
 If all gate tests pass, the system executes a complete electrical validation sequence:
 
-- **Impedance testing (Bipolar + Unipolar)**
-- **Sensitivity verification (Bipolar + Unipolar)**
+- Impedance testing (Bipolar + Unipolar)
+- Sensitivity verification (Bipolar + Unipolar)
 - Urgent mode validation (Unipolar)
-- **Rate verification (Bipolar + Unipolar)**
+- Rate verification (Bipolar + Unipolar)
 - Battery monitoring (BOL, ERI ,EOL)
-- **Noise immunity testing (Bipolar + Unipolar)**
+- Noise immunity testing (Bipolar + Unipolar)
 - High-energy stress testing at maximum parameters
-- **Trailing edge and slew rate verification (Bipolar + Unipolar)**
+- Trailing edge and slew rate verification (Bipolar + Unipolar)
 - Magnet response verification
 
 **Current consumption is continuously monitored during every test stage.**  
@@ -86,4 +86,4 @@ This behavior is automatically enabled based on circuit model identification.
 ---
 
 ## Status
-- Single-chamber circuit validation: **Implemented and actively used in Production QC**
+- Single-chamber circuit validation: Implemented and actively used in Production QC
