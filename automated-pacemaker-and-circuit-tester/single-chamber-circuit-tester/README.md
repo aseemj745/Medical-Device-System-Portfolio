@@ -1,4 +1,4 @@
-# Circuit-Level Validation – Automated Test Flow
+# Single Chamber Circuit-Level Validation – Automated Test Flow
 
 ## Overview
 This section documents the circuit-level validation flow implemented using the same automated test platform developed for pacemaker testing, extended to support deeper electrical characterization and stress validation of pacing circuits.
