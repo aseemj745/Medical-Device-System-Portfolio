@@ -42,7 +42,7 @@ If all gate tests pass, the system executes a complete electrical validation seq
 - **Sensitivity verification (Bipolar + Unipolar)**
 - Urgent mode validation (Unipolar)
 - **Rate verification (Bipolar + Unipolar)**
-- Battery behavior monitoring
+- Battery monitoring (BOL, ERI ,EOL)
 - **Noise immunity testing (Bipolar + Unipolar)**
 - High-energy stress testing at maximum parameters
 - **Trailing edge and slew rate verification (Bipolar + Unipolar)**
