@@ -5,39 +5,80 @@ This setup is used for automated testing and validation of pacemaker circuits. T
 ### Block Description and Interfacing
 
 **PC (Python Test Framework)**  
-The PC runs Python-based test scripts that coordinate power control, current measurement, signal injection, and data logging. All connected instruments and modules are accessed through custom wrappers or standard communication interfaces.
+The PC runs Python-based test scripts that coordinate power control, current measurement, signal injection, and data logging. All connected instruments and modules are accessed through custom wrappers or standard communication interfaces (USB, Serial, SCPI). The PC acts as the central controller for the entire test system, issuing commands and collecting measurement data.
+
+---
 
 **Test Control PCB (Arduino + Relays + Load + Power Switching)**  
-The Test Control PCB manages:
+The Test Control PCB is the central hardware interface layer and manages:
 - Relay-based routing of signals and power
 - Switching between different power sources
-- Application of reference load to the circuit under test  
-The onboard microcontroller(ATmega328P) controls all switching operations based on commands received from the PC.
+- Controlled connection of the circuit under test
+- Integrated reference load for electrical testing  
+
+The onboard microcontroller (ATmega328P) executes switching logic based on commands received from the PC.  
+This board abstracts hardware complexity and enables flexible test sequencing using the same physical platform.
+
+---
 
 **Pacemaker Programmer (USB Interface)**  
 The programmer is used to configure pacemaker parameters such as rate, pulse width, sensitivity, and mode. It is controlled from Python using a custom wrapper and communicates directly with the pacemaker during test execution.
 
-**Programmable Digital Power Supply**  
-The programmable PSU provides controlled power to the circuit during specific test conditions. Voltage and current limits are set by the PC through USB/Serial communication.
+---
+
+**Power Supply & Current Measurement Module**  
+This module provides controlled power to the device under test while simultaneously measuring supply current.  
+It operates in the main supply path and is interfaced with the PC via USB.  
+
+It is used for:
+- Supplying stable test power
+- Real-time current monitoring
+- Detecting abnormal current conditions during validation
+
+---
 
 **Battery Source**  
-A battery is used as an alternate power source to simulate real operating conditions. Switching between the battery and the programmable PSU is handled on the Test Control PCB using relays.
+A battery is used as an alternate power source to simulate real operating conditions and to eliminate noise introduced by USB-powered sources during sensitive measurements.
 
-**Low-Current Measurement Module**  
-This module is used to measure supply current during selected test steps. It is connected in the supply path of the circuit and is accessed by the PC through a USB/Serial interface using a custom Python wrapper.
+- Used specifically during **noise and sensing tests**
+- Power source switching is handled on the Test Control PCB via relays
+
+---
 
 **Function Generator**  
-The function generator injects stimulus signals into the circuit when required. It is controlled by the PC and its output is routed through the Test Control PCB.
+The function generator injects stimulus signals (e.g., sensing signals, noise inputs) into the circuit when required.  
+It is controlled by the PC, and its output is routed through the Test Control PCB.
+
+---
 
 **Oscilloscope**  
-The oscilloscope captures output signals from the circuit under test. Measurements are triggered and collected automatically via SCPI commands from the PC.
+The oscilloscope captures output waveforms and electrical signals from the circuit under test.  
+Measurement acquisition and triggering are automated using SCPI commands from the PC.
+
+---
 
 **Pacemaker Circuit (Device Under Test)**  
-The circuit under test is powered through the Test Control PCB and remains connected to the reference load. Different operating modes and conditions are exercised through controlled power, signal injection, and measurement.
+The circuit under test is powered through the Test Control PCB and remains connected to the onboard reference load.  
+Different operating modes and conditions are exercised through controlled power delivery, signal injection, and automated measurement.
+
+---
 
 **Stepper Motor Jig (R-Mode Activity / Magnet Test)**  
-A stepper motor-based jig provides controlled mechanical movement near the pacemaker for rate-responsive (R-mode) and magnet-related testing. The motor is driven and synchronized through the Test Control PCB.
+A stepper motor-based jig provides controlled mechanical stimulation near the pacemaker for:
+- Rate-responsive (R-mode) validation  
+- Magnet response testing  
+
+The motor is driven and synchronized through the Test Control PCB.
+
+---
 
 ### System Intent
 
-The circuit test system enables repeatable functional verification, current characterization, and power-mode testing by combining controlled power sourcing, automated measurement, and relay-based hardware switching.
+The circuit test system enables repeatable and production-relevant validation of pacemaker circuits by integrating:
+
+- Controlled power sourcing with real-time current monitoring  
+- Relay-based hardware abstraction and signal routing  
+- Automated stimulus injection and waveform measurement  
+- Dynamic power source switching (including battery isolation for low-noise testing)  
+
+The system is designed to support both functional verification and deep electrical characterization under controlled and repeatable conditions.
