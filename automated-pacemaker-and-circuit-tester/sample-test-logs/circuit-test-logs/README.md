@@ -15,7 +15,7 @@ Circuit-level testing performs **deep electrical validation**, including:
 - Sensitivity and signal response validation
 - Noise and stability checks
 - Extended parameter coverage compared to device-level testing
-- Longer high enery test for circuit stability test at maxiumum output
+- High enery test for circuit stability test at maxiumum output
 
 ---
 
