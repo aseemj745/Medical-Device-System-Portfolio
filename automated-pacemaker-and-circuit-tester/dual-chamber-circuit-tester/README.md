@@ -75,7 +75,7 @@ These tests are mandatory for all dual chamber circuits regardless of programmed
 
 - All **non-critical functional failures** are logged and highlighted in the test report
 - After full test execution, the system evaluates overall results
-- Individual failed tests can be re-executed once to rule out transient effects
+- Individual failed tests can be re-executed to rule out transient effects
 - **Failures caused by current violations or gate test failures are not eligible for re-test and are directly routed to manual inspection**
 - Persistent failures after re-test are routed to manual inspection
 
