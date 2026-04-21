@@ -61,7 +61,7 @@ This flow validates dual-chamber pacemakers using a fully automated test system 
 - Other test failures:
   - Logged during execution  
   - Evaluated at end of test cycle  
-  - One re-test allowed for failed tests only  
+  - re-test allowed for failed tests only  
 
 - Re-test behavior:
   - Pass → **previous failed value is overwritten (final PASS)**  
