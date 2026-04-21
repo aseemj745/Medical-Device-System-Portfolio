@@ -94,7 +94,7 @@ These tests are mandatory for all dual chamber circuits regardless of programmed
 
 ## Regression Testing
 
-- Successfully validated **500+ dual chamber pacing circuits** prior to deployment on the production testing floor
+- Successfully validated **300+ dual chamber pacing circuits** prior to deployment on the production testing floor
 
 ---
 
