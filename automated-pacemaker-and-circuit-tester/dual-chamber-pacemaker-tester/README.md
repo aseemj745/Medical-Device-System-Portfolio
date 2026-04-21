@@ -46,8 +46,8 @@ This flow validates dual-chamber pacemakers using a fully automated test system 
 9. Noise test (A & V channels)  
 10. Magnet response test (A & V channels)  
 11. Trailing edge & slew rate test (A & V channels)  
-12. **Rate-responsive (R-mode) test (always executed)**  
-13. **AV delay test**  
+12. Rate-responsive (R-mode) test  
+13. AV delay test 
 14. Final battery measurement  
 
 15. Final evaluation and classification  
