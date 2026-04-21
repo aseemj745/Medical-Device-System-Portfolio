@@ -7,7 +7,7 @@ This flow validates dual-chamber pacemakers using a fully automated test system 
 ## Test Philosophy
 
 - Uses the same automation framework as single-chamber testing  
-- All electrical tests are executed on **both atrial and ventricular channels**  
+- Tests are executed on **both atrial and ventricular channels**  
 - Critical conditions (reset state, battery, amplitude) are handled as **early gate checks**  
 - Remaining tests are executed sequentially with final evaluation  
 - Test execution is controlled via **command-line arguments (stage selection and re-test control)**  
