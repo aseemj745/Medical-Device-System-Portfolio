@@ -1,4 +1,4 @@
-# Single-Chamber Pacemaker Test Flow
+# Single-Chamber Pacemaker Automated Test Flow
 
 This flow validates final single-chamber pacemakers in a fully automated manner across multiple production stages.
 
