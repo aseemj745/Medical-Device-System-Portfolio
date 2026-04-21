@@ -79,9 +79,12 @@ After successful pre-validation, the following tests are executed:
 
 ## Data Logging
 
-- All test results are **automatically logged to structured Excel reports**  
+- All test results are automatically logged to structured Excel reports  
 - Failed parameters are clearly highlighted  
-- Both initial and re-test results are preserved  
+- In case of re-test:
+  - Only the **final result is retained**
+  - If the re-test passes → previous failed value is overwritten  
+  - If the re-test fails → final result remains FAIL  
 - Final PASS / FAIL decision is recorded per device  
 
 ---
