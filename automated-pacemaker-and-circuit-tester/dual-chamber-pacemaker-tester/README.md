@@ -43,7 +43,7 @@ This flow validates dual-chamber pacemakers using a fully automated test system 
 7. Pulse-width Test (A & V channels)  
 8. Impedance measurement Test (A & V channels)  
 9. Noise test (A & V channels)  
-10. Magnet response test  
+10. Magnet response test  (A & V channels)
 11. Trailing edge & slew rate Test (A & V channels)  
 12. Rate-responsive (R-mode) Test 
 13. AV delay Test
