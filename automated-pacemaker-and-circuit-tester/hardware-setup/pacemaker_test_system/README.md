@@ -93,7 +93,8 @@ The system is operated via a Python-based command-line interface (CLI) that enab
 - Stage-wise validation aligned with production flow  
 - Support for single- and dual-chamber configurations  
 - Parameterized testing (e.g., sensitivity, rate, polarity conditions)  
-- Execution of full test suites or selected test subsets  
+- Execution of full test suites or selected test subsets
+- Dual tester support (T1 / T2)
 - Re-testing of failed parameters  
 
 The CLI structure reflects real production usage, where tests are executed across multiple stages such as:
