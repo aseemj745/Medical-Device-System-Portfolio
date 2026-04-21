@@ -1,4 +1,4 @@
-# Dual-Chamber Pacemaker Test Flow
+# Dual-Chamber Pacemaker Automated Test Flow
 
 This flow validates dual-chamber pacemakers using a fully automated test system with synchronized atrial (A) and ventricular (V) channel verification.
 
