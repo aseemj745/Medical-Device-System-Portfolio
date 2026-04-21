@@ -53,7 +53,7 @@ If all gate tests pass, the system executes a complete electrical validation seq
 - **Noise Test** (UNIPOLAR + BIPOLAR — A & V Channel)
 - **High Energy Stress Test** (UNIPOLAR + BIPOLAR — A & V Channel)
 - **Trailing Edge & Slew Rate Test** (UNIPOLAR + BIPOLAR — A & V Channel)
-- **Magnet Test** (UNIPOLAR + BIPOLAR — A & V Channel)
+- **Magnet Test** (A & V Channel)
 
 **Current consumption is continuously monitored during every test stage.**
 Any out-of-tolerance current condition results in immediate termination and routing to manual inspection.
