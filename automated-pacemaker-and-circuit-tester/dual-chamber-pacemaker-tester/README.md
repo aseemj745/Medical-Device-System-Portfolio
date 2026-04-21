@@ -34,19 +34,19 @@ This flow validates dual-chamber pacemakers using a fully automated test system 
 2. Set nominal test parameters  
 3. **Initial battery test (mandatory pre-check)**  
 
-4. **Amplitude & leakage test (A & V channels)**  
+4. **Amplitude & leakage Test (A & V channels)**  
    - Critical gate condition  
    - Failure → **immediate exit to manual inspection**  
 
-5. Sensitivity test (A & V channels)  
-6. Rate & timing verification (A & V channels)  
-7. Pulse-width verification (A & V channels)  
-8. Impedance measurement (A & V channels)  
+5. Sensitivity Test (A & V channels)  
+6. Rate Test
+7. Pulse-width Test (A & V channels)  
+8. Impedance measurement Test (A & V channels)  
 9. Noise test (A & V channels)  
 10. Magnet response test  
-11. Trailing edge & slew rate verification (A & V channels)  
-12. Rate-responsive (R-mode) test 
-13. AV delay test
+11. Trailing edge & slew rate Test (A & V channels)  
+12. Rate-responsive (R-mode) Test 
+13. AV delay Test
 14. Final battery measurement  
 
 15. Final evaluation and classification  
